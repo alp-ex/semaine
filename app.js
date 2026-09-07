@@ -122,7 +122,7 @@ function renderToday(){
     ]));
   });
   var extraIn=el("input",{placeholder:"Ajouter une tache..."});
-  var extraBtn=el("button",{text:"+";}); extraBtn.textContent="+";
+  var extraBtn=el("button",{text:"+"}); extraBtn.textContent="+";
   extraBtn.onclick=function(){ var v=extraIn.value.trim(); if(!v) return; state.extras[key]=state.extras[key]||[]; state.extras[key].push({t:"+",id:"x-"+Date.now(),label:v,tag:"kiff"}); save(state); renderToday(); };
   dayCard.appendChild(el("div",{class:"add"},[extraIn, extraBtn]));
   root.appendChild(dayCard);
