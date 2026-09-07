@@ -2,12 +2,34 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Semaine</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1a1a1a">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Semaine — Ravignan</title>
+<link rel="manifest" href="manifest.json">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="app">chargement…</div>
+<header class="app">
+  <h1>Semaine</h1>
+  <p id="todayLabel">17 rue Ravignan · école Lepic · Didask</p>
+  <div class="locks">
+    <div class="lock" id="lock1"><span>prochain lock</span><b id="lockTitle">—</b></div>
+    <div class="lock" id="lock2"><span>dans</span><b id="lockEta">—</b></div>
+  </div>
+</header>
+<nav class="tabs">
+  <button class="on" data-tab="today">Aujourd'hui</button>
+  <button data-tab="week">Semaine</button>
+  <button data-tab="shop">Courses</button>
+  <button data-tab="more">Kiffs</button>
+</nav>
+<main>
+  <section id="tab-today"></section>
+  <section id="tab-week" hidden></section>
+  <section id="tab-shop" hidden></section>
+  <section id="tab-more" hidden></section>
+</main>
 <script src="app.js"></script>
 </body>
 </html>
