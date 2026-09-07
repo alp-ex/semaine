@@ -1,0 +1,9 @@
+{
+  "name": "Semaine Ravignan",
+  "short_name": "Semaine",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f4efe6",
+  "theme_color": "#161616",
+  "lang": "fr"
+}
